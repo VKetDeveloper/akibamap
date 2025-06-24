@@ -1,0 +1,108 @@
+.page {
+  @apply grid grid-rows-[20px_1fr_20px] items-center justify-center min-h-screen p-20 gap-16 font-sans;
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --gray-rgb: 255, 255, 255;
+    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
+    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
+
+    --button-primary-hover: #ccc;
+    --button-secondary-hover: #1a1a1a;
+  }
+}
+
+.main {
+  @apply flex flex-col gap-8 row-start-2;
+}
+
+.main ol {
+  @apply font-mono pl-0 m-0 text-sm leading-6 tracking-tight list-inside;
+}
+
+.main li:not(:last-of-type) {
+  @apply mb-2;
+}
+
+.main code {
+  @apply bg-gray-100 px-1 py-0.5 rounded font-semibold;
+}
+
+.ctas {
+  @apply flex gap-4;
+}
+
+.ctas a {
+  @apply appearance-none rounded-full h-12 px-5 border border-transparent transition-all cursor-pointer flex items-center justify-center text-base leading-5 font-medium;
+}
+
+a.primary {
+  @apply bg-foreground text-background gap-2;
+}
+
+a.secondary {
+  @apply border-gray-200 min-w-[158px];
+}
+
+.footer {
+  @apply row-start-3 flex gap-6;
+}
+
+.footer a {
+  @apply flex items-center gap-2;
+}
+
+.footer img {
+  @apply flex-shrink-0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    @apply bg-gray-800 border-transparent;
+  }
+
+  a.secondary:hover {
+    @apply bg-gray-200 border-transparent;
+  }
+
+  .footer a:hover {
+    @apply underline underline-offset-4;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    @apply p-8 pb-20;
+  }
+
+  .main {
+    @apply items-center;
+  }
+
+  .main ol {
+    @apply text-center;
+  }
+
+  .ctas {
+    @apply flex-col;
+  }
+
+  .ctas a {
+    @apply text-sm h-10 px-4;
+  }
+
+  a.secondary {
+    @apply min-w-auto;
+  }
+
+  .footer {
+    @apply flex-wrap items-center justify-center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    @apply invert;
+  }
+}
