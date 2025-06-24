@@ -12,6 +12,9 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="G-96S6L2NKMT" />
         <meta name="google-site-verification" content="ZjJhUGR4bWFTcWM5dGc5T3RQeGRBQT090" />
+        <meta itemprop="name" content="秋葉原マップ" />
+        <meta itemprop="description" content="秋葉原のアニメ・マンガスポットを巡るマップアプリ" />
+        <meta itemprop="image" content="akiba_maps_og.png" />
         <meta name="author" content="Mika" />
         <meta name="application-name" content="秋葉原マップ" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
