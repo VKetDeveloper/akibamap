@@ -14,7 +14,7 @@ export default function Document() {
         <meta name="google-site-verification" content="ZjJhUGR4bWFTcWM5dGc5T3RQeGRBQT090" />
         <meta itemProp="name" content="秋葉原マップ" />
         <meta itemProp="description" content="秋葉原のアニメ・マンガスポットを巡るマップアプリ" />
-        <meta itemProp="image" content="akiba_maps_og.png" />
+        <meta itemProp="image" content="/akibamap/akiba_maps_og.png" />
         <meta name="author" content="Mika" />
         <meta name="application-name" content="秋葉原マップ" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -25,11 +25,11 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="秋葉原マップ" />
         <meta property="og:description" content="秋葉原のアニメ・マンガスポットを巡るマップアプリ" />
-        <meta property="og:image" content="akiba_maps_og.png" />
+        <meta property="og:image" content="/akibamap/akiba_maps_og.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="秋葉原マップ" />
         <meta name="twitter:description" content="秋葉原のアニメ・マンガスポットを巡るマップアプリ" />
-        <meta name="twitter:image" content="akiba_maps_og.png" />
+        <meta name="twitter:image" content="/akibamap/akiba_maps_og.png" />
         <meta name="twitter:site" content="@vrugd_jp" />
         <meta name="twitter:creator" content="@vrugd_jp" />
         <meta name="twitter:domain" content="vrugd.jp" />
