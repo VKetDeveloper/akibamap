@@ -31,6 +31,14 @@ const spots: Spot[] = [
     lng: 139.7671,
     description: '歴史ある神社で、アニメとのコラボイベントも開催されます。',
   },
+  {
+    id: 3,
+    name: '居酒屋 和が家 秋葉原店',
+    type: '飲食店',
+    lat: 35.696106,
+    lng: 139.77495,
+    description: '安くて旨い日替わり100円メニューを多数ご用意しております。',
+  }
 ];
 
 const customIcon = new Icon({
@@ -200,6 +208,7 @@ function SpotList({
         <option value="すべて">すべて</option>
         <option value="ショッピング">ショッピング</option>
         <option value="観光地">観光地</option>
+        <option value="飲食店">飲食店</option>
       </select>
 
       <div className="space-y-3">
