@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+'use client';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import Image from 'next/image';
