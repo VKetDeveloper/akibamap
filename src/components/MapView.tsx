@@ -42,12 +42,12 @@ const spots: Spot[] = [
 ];
 
 const customIcon = new Icon({
-  iconUrl: '/pin.png',
+  iconUrl: '/akibamap/pin.png',
   iconSize: [32, 32],
 });
 
 const currentLocationIcon = new Icon({
-  iconUrl: '/pin.png',
+  iconUrl: '/akibamap/pin.png',
   iconSize: [24, 24],
 });
 
