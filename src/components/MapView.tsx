@@ -33,7 +33,7 @@ const spots: Spot[] = [
   { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/', nfsw: false },
   { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/', nfsw: false },
   { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
-  { id: 13, name: 'Vketちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'Vketちゃんの部屋は少し大人な雰囲気の空間で、リラックスして楽しむことができます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
+  { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -112,7 +112,29 @@ export default function MapView() {
 
       <aside className="hidden md:block md:w-1/3 h-full p-4 overflow-y-auto bg-white border-l">
         {loading ? (
-          <p className="text-center text-gray-500">読み込み中...</p>
+          <div className="flex flex-col items-center justify-center h-full py-20">
+            <svg
+              className="animate-spin h-8 w-8 text-gray-400 mb-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+              />
+            </svg>
+            <p className="text-center text-gray-500">読み込み中...</p>
+          </div>
         ) : (
           <SpotList
             filter={filter}
@@ -224,7 +246,7 @@ function SpotList({
         <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
         <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5"></div>
           </div>
-          <span className="ml-3 text-sm text-gray-600">NSFWコンテンツを非表示</span>
+          <span className="ml-3 text-sm text-gray-600">NSFW</span>
         </label>
       </div>
 
