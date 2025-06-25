@@ -22,7 +22,9 @@ const spots: Spot[] = [
   { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。' },
   { id :5 , name:'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。' },
   { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。' },
-
+  { id: 7, name: '昌平まちかど図書館', type: 'TOKYOクールシェアスポット', lat: 35.701365, lng: 139.76996, description: '熱中症特別警戒アラート発表の有無にかかわらず、暑いときや外出中に涼みたくなったときに立ち寄ることができる、屋外を含む施設です。' },
+  { id: 8, name: '万世橋出張所', type: 'クーリングシェルター', lat: 35.697606, lng: 139.770705, description: '改正気候変動適応法に基づき区市町村が指定する施設で、「熱中症特別警戒アラート」が環境省から発表された際に、暑さをしのぐために開放される冷房設備が整った施設です。' },
+  { id: 9, name: '和泉橋出張所', type: 'クーリングシェルター', lat: 35.697345, lng: 139.774959, description: '改正気候変動適応法に基づき区市町村が指定する施設で、「熱中症特別警戒アラート」が環境省から発表された際に、暑さをしのぐために開放される冷房設備が整った和泉橋の近くに位置するクーリングシェルターです。' }
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -189,6 +191,8 @@ function SpotList({
         <option value="ショッピング">ショッピング</option>
         <option value="観光地">観光地</option>
         <option value="飲食店">飲食店</option>
+        <option value="TOKYOクールシェアスポット">TOKYOクールシェアスポット</option>
+        <option value="クーリングシェルター">クーリングシェルター</option>
       </select>
 
       <motion.div
