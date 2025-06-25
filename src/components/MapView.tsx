@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, ZoomControl } from 'rea
 import { Icon, LatLngExpression } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import NextNProgress from 'nextjs-progressbar';
 
 type Spot = {
   id: number;
@@ -36,6 +38,7 @@ export default function MapView() {
   const [focusedSpotId, setFocusedSpotId] = useState<number | null>(null);
   const [currentPos, setCurrentPos] = useState<LatLngExpression | null>(null);
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -43,6 +46,9 @@ export default function MapView() {
         setCurrentPos([pos.coords.latitude, pos.coords.longitude]);
       });
     }
+    // Simulate loading
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   const filteredSpots = spots.filter(
@@ -55,6 +61,7 @@ export default function MapView() {
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full">
+      <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} />
       {/* Map */}
       <div className="w-full h-1/2 md:h-full md:w-2/3">
         <MapContainer
@@ -90,14 +97,18 @@ export default function MapView() {
 
       {/* Sidebar for Desktop */}
       <aside className="hidden md:block md:w-1/3 h-full p-4 overflow-y-auto bg-white border-l">
-        <SpotList
-          filter={filter}
-          search={search}
-          setFilter={setFilter}
-          setSearch={setSearch}
-          spots={filteredSpots}
-          onClickSpot={setFocusedSpotId}
-        />
+        {loading ? (
+          <p className="text-center text-gray-500">読み込み中...</p>
+        ) : (
+          <SpotList
+            filter={filter}
+            search={search}
+            setFilter={setFilter}
+            setSearch={setSearch}
+            spots={filteredSpots}
+            onClickSpot={setFocusedSpotId}
+          />
+        )}
       </aside>
 
       {/* Mobile Modal Button */}
@@ -176,22 +187,28 @@ function SpotList({
         <option value="飲食店">飲食店</option>
       </select>
 
-      <div className="space-y-3">
+      <motion.div
+        className="space-y-3"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         {spots.map((spot) => (
-          <div
+          <motion.div
             key={spot.id}
             onClick={() => onClickSpot(spot.id)}
             className="cursor-pointer border p-4 rounded-md shadow-sm hover:shadow-md transition"
+            whileHover={{ scale: 1.02 }}
           >
             <div className="text-xs text-gray-500">{spot.type}</div>
             <div className="text-base font-semibold">{spot.name}</div>
             <p className="text-sm text-gray-700">{spot.description}</p>
-          </div>
+          </motion.div>
         ))}
         {spots.length === 0 && (
           <p className="text-center text-sm text-gray-500">該当するスポットはありません。</p>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 }
