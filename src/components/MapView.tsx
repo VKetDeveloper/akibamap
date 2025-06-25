@@ -27,6 +27,7 @@ const spots: Spot[] = [
   { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。' },
   { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。' },
   { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。' },
+  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。' }
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -197,6 +198,7 @@ function SpotList({
         <option value="飲食店">飲食店</option>
         <option value="ゲームセンター">ゲームセンター</option>
         <option value="スーパー銭湯">スーパー銭湯</option>
+        <option value="宿泊施設">宿泊施設</option>
       </select>
 
       <motion.div
