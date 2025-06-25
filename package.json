@@ -9,12 +9,35 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/carousel": "^8.1.1",
+    "@mantine/charts": "^8.1.1",
+    "@mantine/code-highlight": "^8.1.1",
+    "@mantine/core": "^8.1.1",
+    "@mantine/dates": "^8.1.1",
+    "@mantine/dropzone": "^8.1.1",
+    "@mantine/form": "^8.1.1",
+    "@mantine/hooks": "^8.1.1",
+    "@mantine/modals": "^8.1.1",
+    "@mantine/notifications": "^8.1.1",
+    "@mantine/nprogress": "^8.1.1",
+    "@mantine/spotlight": "^8.1.1",
+    "@mantine/tiptap": "^8.1.1",
+    "@tiptap/extension-link": "^2.22.3",
+    "@tiptap/pm": "^2.22.3",
+    "@tiptap/react": "^2.22.3",
+    "@tiptap/starter-kit": "^2.22.3",
     "classnames": "^2.5.1",
+    "dayjs": "^1.11.13",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "heroui-cli": "^1.2.3",
     "leaflet": "^1.9.4",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-leaflet": "^5.0.0"
+    "react-leaflet": "^5.0.0",
+    "recharts": "^2.15.4",
+    "shadcn": "^2.7.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,6 +48,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
+    "postcss": "^8.5.6",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
