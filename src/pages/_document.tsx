@@ -19,7 +19,7 @@ export default function Document() {
         <meta name="google-site-verification" content="ZjJhUGR4bWFTcWM5dGc5T3RQeGRBQT090" />
         <meta itemProp="name" content="VketReal有志スタッフおすすめ秋葉原名所マップ" />
         <meta itemProp="description" content="VketReal有志スタッフがおすすめする秋葉原の名所マップです。" />
-        <meta itemProp="image" content="/akibamap/akiba_maps_og.png" />
+        <meta itemProp="image" content="https://www.vrugd.jp/akibamap/akiba_maps_og.png" />
         <meta name="author" content="Mika" />
         <meta name="application-name" content="VketReal有志スタッフおすすめ秋葉原名所マップ" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,11 +30,11 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="VketReal有志スタッフおすすめ秋葉原名所マップ" />
         <meta property="og:description" content="VketReal有志スタッフがおすすめする秋葉原の名所マップです。" />
-        <meta property="og:image" content="/akibamap/akiba_maps_og.png" />
+        <meta property="og:image" content="https://www.vrugd.jp/akibamap/akiba_maps_og.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="VketReal有志スタッフおすすめ秋葉原名所マップ" />
         <meta name="twitter:description" content="VketReal有志スタッフがおすすめする秋葉原の名所マップです。" />
-        <meta name="twitter:image" content="/akibamap/akiba_maps_og.png" />
+        <meta name="twitter:image" content="https://www.vrugd.jp/akibamap/akiba_maps_og.png" />
         <meta name="twitter:site" content="@vrugd_jp" />
         <meta name="twitter:creator" content="@vrugd_jp" />
         <meta name="twitter:domain" content="vrugd.jp" />
