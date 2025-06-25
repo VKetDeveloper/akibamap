@@ -98,13 +98,16 @@ export default function MapView() {
     <div className="flex flex-col md:flex-row h-screen w-full bg-white dark:bg-black">
       <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} />
       <div className="w-full h-1/2 md:h-full md:w-2/3 bg-white dark:bg-black">
-        <MapContainer
-          center={[35.6987, 139.7713]}
-          zoom={16}
-          scrollWheelZoom
-          zoomControl={false}
-          className="w-full h-full bg-white dark:bg-black"
-        >
+            <MapContainer
+              center={[35.6987, 139.7713]}
+              zoom={16}
+              maxZoom={18}
+              minZoom={14}
+              scrollWheelZoom
+              maxBounds={[[35.6, 139.6], [35.8, 139.9]]}
+              zoomControl={false}
+              className="w-full h-full"
+            >
           <ZoomControl position="bottomright" />
           {/* <TileLayer
             attribution="© OpenStreetMap contributors"
