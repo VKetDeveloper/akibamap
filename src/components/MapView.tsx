@@ -33,7 +33,7 @@ const spots: Spot[] = [
   { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/', nfsw: false },
   { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/', nfsw: false },
   { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
-  { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
+  { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.com/', nfsw: true },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -230,30 +230,30 @@ function SpotList({
   return (
     <div>
       <input
-        type="text"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        placeholder="検索..."
-        className="w-full p-2 mb-3 border rounded"
+      type="text"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      placeholder="検索..."
+      className="w-full p-2 mb-3 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-700"
       />
       <select
-        value={filter}
-        onChange={(e) => setFilter(e.target.value)}
-        className="w-full p-2 mb-4 border rounded"
+      value={filter}
+      onChange={(e) => setFilter(e.target.value)}
+      className="w-full p-2 mb-4 border rounded bg-white text-black dark:bg-gray-800 dark:text-white dark:border-gray-700"
       >
-        <option value="すべて">すべて</option>
-        <option value="ショッピング">ショッピング</option>
-        <option value="観光地">観光地</option>
-        <option value="飲食店">飲食店</option>
-        <option value="ゲームセンター">ゲームセンター</option>
-        <option value="スーパー銭湯">スーパー銭湯</option>
-        <option value="宿泊施設">宿泊施設</option>
-        <option value="その他">その他</option>
+      <option value="すべて">すべて</option>
+      <option value="ショッピング">ショッピング</option>
+      <option value="観光地">観光地</option>
+      <option value="飲食店">飲食店</option>
+      <option value="ゲームセンター">ゲームセンター</option>
+      <option value="スーパー銭湯">スーパー銭湯</option>
+      <option value="宿泊施設">宿泊施設</option>
+      <option value="その他">その他</option>
       </select>
 
       <div className="flex items-center mb-4">
-        <label htmlFor="nsfw-filter" className="flex items-center cursor-pointer">
-          <div className="relative">
+      <label htmlFor="nsfw-filter" className="flex items-center cursor-pointer">
+        <div className="relative">
         <input
           type="checkbox"
           id="nsfw-filter"
@@ -261,11 +261,11 @@ function SpotList({
           onChange={(e) => setNsfwFilter(!e.target.checked)}
           className="sr-only peer"
         />
-        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
-        <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5"></div>
-          </div>
-          <span className="ml-3 text-sm text-gray-600">NSFWスポットも表示</span>
-        </label>
+        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 dark:bg-gray-700 dark:peer-checked:bg-blue-500 transition-colors"></div>
+        <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5 dark:bg-gray-200"></div>
+        </div>
+        <span className="ml-3 text-sm text-gray-600 dark:text-gray-300">NSFWスポットも表示</span>
+      </label>
       </div>
 
       <motion.div
