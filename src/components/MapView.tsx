@@ -74,7 +74,7 @@ export default function MapView() {
       <div className="w-full h-1/2 md:h-full md:w-2/3">
         <MapContainer
           center={[35.6987, 139.7713]}
-          zoom={15}
+          zoom={16}
           scrollWheelZoom
           zoomControl={false}
           className="w-full h-full"
