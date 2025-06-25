@@ -30,7 +30,7 @@ const currentLocationIcon = new Icon({ iconUrl: 'pin.png', iconSize: [24, 24] })
 function SpotFlyTo({ lat, lng }: { lat: number; lng: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo([lat, lng], 17, { duration: 1.2 });
+    map.flyTo([lat, lng], 18, { duration: 1.2 });
   }, [lat, lng, map]);
   return null;
 }
