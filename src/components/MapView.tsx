@@ -106,9 +106,13 @@ export default function MapView() {
           className="w-full h-full bg-white dark:bg-black"
         >
           <ZoomControl position="bottomright" />
-          <TileLayer
+          {/* <TileLayer
             attribution="© OpenStreetMap contributors"
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          /> */}
+          <TileLayer
+            attribution="© OpenStreetMap contributors"
+            url="https://r2.hirohiroto112607.f5.si/{z}/{x}/{y}.png"
           />
           {filteredSpots.map((spot) => (
             <Marker
