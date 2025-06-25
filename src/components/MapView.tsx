@@ -35,6 +35,7 @@ const spots: Spot[] = [
   { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
   { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.com/', nfsw: true },
   { id: 14, name: '神田たまごけん 秋葉原店', type: '飲食店', lat: 35.701263, lng: 139.771185, description: 'オムライス　おいしいです（有志スタッフ談）', imageUrl: 'images/notimg.png', siteurl: 'https://www.tamagoken.com/introduction/akihabara/', nfsw: false },
+  { id: 15, name: ' きづなすし 秋葉原店', type: '飲食店', lat: 35.697725, lng: 139.771618, description: '新鮮なネタとこだわりのシャリが自慢の寿司店。お好きなネタを一貫99円（税抜価格）よりお好みでご注文でき、一品料理は約40種類、ドリンクも約50種類と豊富に取り揃え。「寿司食べ放題」もお楽しみいただけます。', imageUrl: 'images/notimg.png', siteurl: 'https://www.sfpdining.jp/search/?brand=%E3%81%8D%E3%81%A5%E3%81%AA%E3%81%99%E3%81%97&todofuken=0', nfsw: false },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
