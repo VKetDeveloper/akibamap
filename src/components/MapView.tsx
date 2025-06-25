@@ -94,15 +94,15 @@ export default function MapView() {
   const focusedSpot = spots.find((s) => s.id === focusedSpotId);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen w-full">
+    <div className="flex flex-col md:flex-row h-screen w-full bg-white dark:bg-black">
       <NextNProgress color="#29D" startPosition={0.3} stopDelayMs={200} height={3} />
-      <div className="w-full h-1/2 md:h-full md:w-2/3">
+      <div className="w-full h-1/2 md:h-full md:w-2/3 bg-white dark:bg-black">
         <MapContainer
           center={[35.6987, 139.7713]}
           zoom={16}
           scrollWheelZoom
           zoomControl={false}
-          className="w-full h-full"
+          className="w-full h-full bg-white dark:bg-black"
         >
           <ZoomControl position="bottomright" />
           <TileLayer
@@ -128,7 +128,7 @@ export default function MapView() {
         </MapContainer>
       </div>
 
-      <aside className="hidden md:block md:w-1/3 h-full p-4 overflow-y-auto bg-white border-l">
+      <aside className="hidden md:block md:w-1/3 h-full p-4 overflow-y-auto bg-white dark:bg-black border-l dark:border-gray-800">
         {loading ? (
           <div className="flex flex-col items-center justify-center h-full py-20">
             <svg
