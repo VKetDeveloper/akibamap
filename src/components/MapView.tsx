@@ -239,14 +239,14 @@ function SpotList({
         <input
           type="checkbox"
           id="nsfw-filter"
-          checked={nsfwFilter}
-          onChange={(e) => setNsfwFilter(e.target.checked)}
+          checked={!nsfwFilter}
+          onChange={(e) => setNsfwFilter(!e.target.checked)}
           className="sr-only peer"
         />
         <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
         <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5"></div>
           </div>
-          <span className="ml-3 text-sm text-gray-600">NSFW</span>
+          <span className="ml-3 text-sm text-gray-600">NSFWスポットも表示</span>
         </label>
       </div>
 
