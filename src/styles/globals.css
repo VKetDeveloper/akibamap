@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
@@ -19,8 +21,15 @@
   }
 }
 
+.wdxl-lubrifont-jp-n-regular {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "WDXL Lubrifont JP N", Arial, Helvetica, sans-serif;
 }
