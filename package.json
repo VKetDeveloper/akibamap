@@ -32,6 +32,7 @@
     "embla-carousel-react": "^8.6.0",
     "heroui-cli": "^1.2.3",
     "leaflet": "^1.9.4",
+    "motion": "^12.19.1",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
