@@ -17,25 +17,27 @@ type Spot = {
   description: string;
   imageUrl: string;
   siteurl: string;
+  nfsw: boolean;
 };
 
 const spots: Spot[] = [
-  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: 'images/notimg.png', siteurl: 'https://akihabara-radiokaikan.co.jp/' },
-  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: 'images/notimg.png', siteurl: 'https://kandamyoujin.or.jp/' },
-  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com' },
-  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png', siteurl: 'https://www.yodobashi.com/' },
-  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/' },
-  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/' },
-  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png', siteurl: 'https://www.akihabara-beep.com/' },
-  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703' },
-  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata' },
-  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/' },
-  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/' },
-  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html' },
+  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: 'images/notimg.png', siteurl: 'https://akihabara-radiokaikan.co.jp/', nfsw: false },
+  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: 'images/notimg.png', siteurl: 'https://kandamyoujin.or.jp/', nfsw: false },
+  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com', nfsw: false },
+  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png', siteurl: 'https://www.yodobashi.com/', nfsw: false },
+  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/', nfsw: false },
+  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/', nfsw: false },
+  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png', siteurl: 'https://www.akihabara-beep.com/', nfsw: false },
+  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703', nfsw: false },
+  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata', nfsw: false },
+  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/', nfsw: false },
+  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/', nfsw: false },
+  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
+  { id: 13, name: 'Vketちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'Vketちゃんの部屋は少し大人な雰囲気の空間で、リラックスして楽しむことができます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
-const currentLocationIcon = new Icon({ iconUrl: 'pin.png', iconSize: [24, 24] });
+const currentLocationIcon = new Icon({ iconUrl: 'usr_pin.png', iconSize: [24, 24] });
 
 function SpotFlyTo({ lat, lng }: { lat: number; lng: number }) {
   const map = useMap();
@@ -52,6 +54,7 @@ export default function MapView() {
   const [currentPos, setCurrentPos] = useState<LatLngExpression | null>(null);
   const [showModal, setShowModal] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [nsfwFilter, setNsfwFilter] = useState(true);
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -66,7 +69,8 @@ export default function MapView() {
   const filteredSpots = spots.filter(
     (s) =>
       (filter === 'すべて' || s.type === filter) &&
-      (s.name.includes(search) || s.description.includes(search))
+      (s.name.includes(search) || s.description.includes(search)) &&
+      (!nsfwFilter || !s.nfsw)
   );
 
   const focusedSpot = spots.find((s) => s.id === focusedSpotId);
@@ -87,7 +91,7 @@ export default function MapView() {
             attribution="© OpenStreetMap contributors"
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {spots.map((spot) => (
+          {filteredSpots.map((spot) => (
             <Marker
               key={spot.id}
               position={[spot.lat, spot.lng]}
@@ -116,6 +120,8 @@ export default function MapView() {
             setFilter={setFilter}
             setSearch={setSearch}
             spots={filteredSpots}
+            nsfwFilter={nsfwFilter}
+            setNsfwFilter={setNsfwFilter}
             onClickSpot={setFocusedSpotId}
           />
         )}
@@ -148,6 +154,8 @@ export default function MapView() {
               setFilter={setFilter}
               setSearch={setSearch}
               spots={filteredSpots}
+              nsfwFilter={nsfwFilter}
+              setNsfwFilter={setNsfwFilter}
               onClickSpot={(id) => {
                 setFocusedSpotId(id);
                 setShowModal(false);
@@ -166,6 +174,8 @@ function SpotList({
   setFilter,
   setSearch,
   spots,
+  nsfwFilter,
+  setNsfwFilter,
   onClickSpot,
 }: {
   filter: string;
@@ -173,6 +183,8 @@ function SpotList({
   setFilter: (val: string) => void;
   setSearch: (val: string) => void;
   spots: Spot[];
+  nsfwFilter: boolean;
+  setNsfwFilter: (val: boolean) => void;
   onClickSpot: (id: number) => void;
 }) {
   return (
@@ -182,12 +194,12 @@ function SpotList({
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="検索..."
-        className="w-full p-2 mb-3 border border-gray-300 rounded-md"
+        className="w-full p-2 mb-3 border rounded"
       />
       <select
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
-        className="w-full p-2 mb-4 border border-gray-300 rounded-md"
+        className="w-full p-2 mb-4 border rounded"
       >
         <option value="すべて">すべて</option>
         <option value="ショッピング">ショッピング</option>
@@ -196,7 +208,25 @@ function SpotList({
         <option value="ゲームセンター">ゲームセンター</option>
         <option value="スーパー銭湯">スーパー銭湯</option>
         <option value="宿泊施設">宿泊施設</option>
+        <option value="その他">その他</option>
       </select>
+
+      <div className="flex items-center mb-4">
+        <label htmlFor="nsfw-filter" className="flex items-center cursor-pointer">
+          <div className="relative">
+        <input
+          type="checkbox"
+          id="nsfw-filter"
+          checked={nsfwFilter}
+          onChange={(e) => setNsfwFilter(e.target.checked)}
+          className="sr-only peer"
+        />
+        <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
+        <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5"></div>
+          </div>
+          <span className="ml-3 text-sm text-gray-600">NSFWコンテンツを非表示</span>
+        </label>
+      </div>
 
       <motion.div
         className="space-y-4"
@@ -208,27 +238,59 @@ function SpotList({
           <motion.div
             key={spot.id}
             onClick={() => onClickSpot(spot.id)}
-            className="cursor-pointer rounded-xl border border-gray-200 bg-white overflow-hidden shadow hover:shadow-md transition"
+            className="cursor-pointer rounded border bg-white shadow hover:shadow-md transition"
             whileHover={{ scale: 1.01 }}
           >
             <ImageWithLoader src={spot.imageUrl} alt={spot.name} />
-            <div className="p-4 space-y-1">
-              <div className="text-xs text-gray-500">{spot.type}</div>
+            <div className="p-4 space-y-1 mb-2">
+              <div className="inline-block px-2 py-1 text-xs text-white bg-blue-500 rounded">
+                {spot.type}
+              </div>
               <div className="font-bold">{spot.name}</div>
-              <p className="text-sm text-gray-600">{spot.description}</p>
-              <a
+              <p className="text-sm text-gray-600 mt-4">{spot.description}</p>
+              <motion.a
                 href={spot.siteurl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline text-sm"
+                className="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition mt-4"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                style={{ display: 'block', textAlign: 'center' }}
               >
                 公式サイト
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         ))}
         {spots.length === 0 && (
-          <p className="text-center text-sm text-gray-500">該当するスポットはありません。</p>
+          <motion.div
+            className="flex flex-col items-center text-center text-sm text-gray-500"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <svg
+              className="h-6 w-6 mb-2 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="2"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"
+              />
+            </svg>
+            該当するスポットはありません。
+          </motion.div>
         )}
       </motion.div>
     </div>

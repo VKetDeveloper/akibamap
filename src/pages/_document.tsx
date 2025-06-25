@@ -5,7 +5,7 @@ import Script from "next/script";
 // Custom components
 import Footer from "../components/footer";
 import Header from "../components/header";
-
+import { myfont } from '../components/fonts';
 export default function Document() {
   return (
     <Html lang="ja">
@@ -58,17 +58,9 @@ export default function Document() {
           src="https://www.googletagmanager.com/gtag/js?id=G-96S6L2NKMT"
           strategy="afterInteractive"
         />
-        {/* <script
-          id="gtag-init"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-96S6L2NKMT');
-            `,
-          }}
-        /> */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap" rel="stylesheet" />
         <GoogleAnalytics gaId="G-96S6L2NKMT" />
         <Script
           src="https://static.cloudflareinsights.com/beacon.min.js"
@@ -128,7 +120,7 @@ export default function Document() {
   />
         <title>VketReal有志スタッフおすすめ秋葉原名所マップ</title>
         </Head>
-      <body className="antialiased">
+      <body className="antialiased" style={myfont.style}>
         <Header />
         <Main />
         <NextScript />
