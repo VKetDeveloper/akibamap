@@ -26,7 +26,7 @@ const spots: Spot[] = [
   { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com', nfsw: false },
   { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png', siteurl: 'https://www.yodobashi.com/', nfsw: false },
   { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/', nfsw: false },
-  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/', nfsw: false },
+  { id: 6, name: '秋葉原UDX', type: 'イベント', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/', nfsw: false },
   { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png', siteurl: 'https://www.akihabara-beep.com/', nfsw: false },
   { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703', nfsw: false },
   { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata', nfsw: false },
@@ -257,6 +257,7 @@ function SpotList({
       >
       <option value="すべて">すべて</option>
       <option value="ショッピング">ショッピング</option>
+      <option value="イベント">イベント</option>
       <option value="観光地">観光地</option>
       <option value="飲食店">飲食店</option>
       <option value="ゲームセンター">ゲームセンター</option>
