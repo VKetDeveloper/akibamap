@@ -16,21 +16,22 @@ type Spot = {
   lng: number;
   description: string;
   imageUrl: string;
+  siteurl: string;
 };
 
 const spots: Spot[] = [
-  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: 'images/notimg.png' },
-  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: 'images/notimg.png' },
-  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png' },
-  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png' },
-  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png' },
-  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' },
-  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png' },
-  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png' },
-  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png' },
-  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png' },
-  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png' },
-  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png' }
+  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: 'images/notimg.png', siteurl: 'https://akihabara-radiokaikan.co.jp/' },
+  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: 'images/notimg.png', siteurl: 'https://kandamyoujin.or.jp/' },
+  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com' },
+  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png', siteurl: 'https://www.yodobashi.com/' },
+  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/' },
+  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/' },
+  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png', siteurl: 'https://www.akihabara-beep.com/' },
+  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703' },
+  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata' },
+  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/' },
+  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/' },
+  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html' },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -215,6 +216,14 @@ function SpotList({
               <div className="text-xs text-gray-500">{spot.type}</div>
               <div className="font-bold">{spot.name}</div>
               <p className="text-sm text-gray-600">{spot.description}</p>
+              <a
+                href={spot.siteurl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                公式サイト
+              </a>
             </div>
           </motion.div>
         ))}
