@@ -22,6 +22,11 @@ const spots: Spot[] = [
   { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。' },
   { id :5 , name:'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。' },
   { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。' },
+  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。' },
+  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。' },
+  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。' },
+  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。' },
+  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。' },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
@@ -190,6 +195,8 @@ function SpotList({
         <option value="ショッピング">ショッピング</option>
         <option value="観光地">観光地</option>
         <option value="飲食店">飲食店</option>
+        <option value="ゲームセンター">ゲームセンター</option>
+        <option value="スーパー銭湯">スーパー銭湯</option>
       </select>
 
       <motion.div
