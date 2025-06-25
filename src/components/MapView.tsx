@@ -21,23 +21,41 @@ type Spot = {
 };
 
 const spots: Spot[] = [
-  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: 'images/notimg.png', siteurl: 'https://akihabara-radiokaikan.co.jp/', nfsw: false },
-  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: 'images/notimg.png', siteurl: 'https://kandamyoujin.or.jp/', nfsw: false },
-  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: 'images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com', nfsw: false },
-  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: 'images/notimg.png', siteurl: 'https://www.yodobashi.com/', nfsw: false },
-  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/', nfsw: false },
-  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: 'images/notimg.png' , siteurl: 'https://www.udx.jp/', nfsw: false },
-  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: 'images/notimg.png', siteurl: 'https://www.akihabara-beep.com/', nfsw: false },
-  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703', nfsw: false },
-  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: 'images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata', nfsw: false },
-  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: 'images/notimg.png', siteurl: 'https://www.atre.co.jp/', nfsw: false },
-  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: 'images/notimg.png', siteurl: 'https://rakuspa.com/kanda/', nfsw: false },
-  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: 'images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
-  { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: 'images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
+  { id: 1, name: '秋葉原ラジオ会館', type: 'ショッピング', lat: 35.698154, lng: 139.771734, description: 'アニメや電子部品など多彩な商品が揃うショッピングスポット。', imageUrl: '/images/notimg.png', siteurl: 'https://akihabara-radiokaikan.co.jp/', nfsw: false },
+  { id: 2, name: '神田明神', type: '観光地', lat: 35.701303, lng: 139.767834, description: '歴史ある神社で、アニメとのコラボイベントも開催されます。', imageUrl: '/images/notimg.png', siteurl: 'https://kandamyoujin.or.jp/', nfsw: false },
+  { id: 3, name: '居酒屋 和が家 秋葉原店', type: '飲食店', lat: 35.696106, lng: 139.77495, description: '安くて旨い日替わり100円メニューを多数ご用意しております。', imageUrl: '/images/notimg.png', siteurl: 'https://izakaya-wagaya-akihabara.com', nfsw: false },
+  { id: 4, name: 'ヨドバシカメラ 秋葉原店', type: 'ショッピング', lat: 35.698917, lng: 139.774798, description: '最新の家電やパソコン関連商品が揃う大型電気店。', imageUrl: '/images/notimg.png', siteurl: 'https://www.yodobashi.com/', nfsw: false },
+  { id: 5, name: 'ベルサール秋葉原', type: '観光地', lat: 35.700043, lng: 139.771092, description: 'イベントや展示会が開催される多目的ホール。', imageUrl: '/images/notimg.png', siteurl: 'https://www.bellesalle.co.jp/', nfsw: false },
+  { id: 6, name: '秋葉原UDX', type: 'ショッピング', lat: 35.700705, lng: 139.772533 , description: 'ショッピングモールやオフィス、飲食店が集まる複合施設。', imageUrl: '/images/notimg.png' , siteurl: 'https://www.udx.jp/', nfsw: false },
+  { id: 7, name: 'BEEP 秋葉原', type: 'ショッピング', lat: 35.701511, lng: 139.770865, description: '最新から貴重なゲームや関連商品を取り揃え。', imageUrl: '/images/notimg.png', siteurl: 'https://www.akihabara-beep.com/', nfsw: false },
+  { id: 8, name: 'Hey', type: 'ゲームセンター', lat: 35.699072, lng: 139.770917, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: '/images/notimg.png', siteurl: 'https://www.taito.co.jp/store/00001703', nfsw: false },
+  { id: 9, name: '牛丼専門　サンボ', type: '飲食店', lat: 35.701271, lng: 139.771007, description: '「シュタインズ・ゲート」にも登場した秋葉原グルメのど定番。', imageUrl: '/images/notimg.png', siteurl: 'https://tabelog.com/tokyo/A1311/A131101/13006063/#title-rstdata', nfsw: false },
+  { id: 10, name: 'アトレ秋葉原', type: 'ショッピング', lat: 35.698414, lng: 139.77365, description: 'ファッションや雑貨、飲食店が揃うショッピングモール。', imageUrl: '/images/notimg.png', siteurl: 'https://www.atre.co.jp/', nfsw: false },
+  { id: 11, name: 'RAKU SPA 1010 神田', type: 'スーパー銭湯', lat: 35.698137, lng: 139.767935, description: 'リラックスできる温泉施設で、アキバ主要部から徒歩5〜10分。短時間の銭湯利用なら550円で様々な入浴プランがあります。', imageUrl: '/images/notimg.png', siteurl: 'https://rakuspa.com/kanda/', nfsw: false },
+  { id: 12, name: 'ＪＲ東日本ホテルメッツ 秋葉原', type: '宿泊施設', lat: 35.698137, lng: 139.772644, description: '秋葉原駅から徒歩1分圏内の便利な場所にあり、東京を探索するのに便利です。', imageUrl: '/images/notimg.png', siteurl: 'https://www.hotelmets.jp/akihabara/index.html', nfsw: false },
+  { id: 13, name: 'ココちゃんの部屋', type: 'その他', lat: 35.6987, lng: 139.7713, description: 'ココちゃんの部屋は少し大人な雰囲気の空間で、一緒にイチャイチャできます。', imageUrl: '/images/notimg.png', siteurl: 'https://vket.jp/', nfsw: true },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
 const currentLocationIcon = new Icon({ iconUrl: 'usr_pin.png', iconSize: [24, 24] });
+
+// Tailwind dark mode font color fix
+if (typeof window !== "undefined") {
+  const style = document.createElement("style");
+  style.innerHTML = `
+    html.dark, .dark {
+      color: #222 !important;
+      background-color: #fff !important;
+    }
+    .dark .text-white, .dark.text-white {
+      color: #222 !important;
+    }
+    .dark .bg-white, .dark.bg-white {
+      background-color: #fff !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
 
 function SpotFlyTo({ lat, lng }: { lat: number; lng: number }) {
   const map = useMap();
@@ -260,26 +278,26 @@ function SpotList({
           <motion.div
             key={spot.id}
             onClick={() => onClickSpot(spot.id)}
-            className="cursor-pointer rounded border bg-white shadow hover:shadow-md transition"
+            className="cursor-pointer rounded border bg-white dark:bg-black shadow hover:shadow-md transition"
             whileHover={{ scale: 1.01 }}
           >
             <ImageWithLoader src={spot.imageUrl} alt={spot.name} />
-            <div className="p-4 space-y-1 mb-2">
+            <div className="p-4 space-y-1 mb-2 text-black dark:text-white">
               <div className="inline-block px-2 py-1 text-xs text-white bg-blue-500 rounded">
-                {spot.type}
+          {spot.type}
               </div>
               <div className="font-bold">{spot.name}</div>
-              <p className="text-sm text-gray-600 mt-4">{spot.description}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mt-4">{spot.description}</p>
               <motion.a
-                href={spot.siteurl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition mt-4"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                style={{ display: 'block', textAlign: 'center' }}
+          href={spot.siteurl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition mt-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          style={{ display: 'block', textAlign: 'center' }}
               >
-                公式サイト
+          公式サイト
               </motion.a>
             </div>
           </motion.div>
