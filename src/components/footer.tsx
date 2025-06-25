@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <footer className="bg-gray-800 text-white py-6">
                 <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
-                        <Link href="/" className="flex items-center">
+                        <Link href="../" className="flex items-center">
                             <Image
                                 src="/img/logo.png"
                                 alt="VRUGD Logo"
