@@ -83,41 +83,118 @@ export default function Document() {
       ></script>
       
       <Script
+        id="nprogress-style"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+        /* NProgress styles */
+        #nprogress { pointer-events: none; }
+        #nprogress .bar {
+          background: #29d;
+          position: fixed;
+          z-index: 1031;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+        }
+        #nprogress .peg {
+          display: block;
+          position: absolute;
+          right: 0px;
+          width: 100px;
+          height: 100%;
+          box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+          opacity: 1.0;
+          -webkit-transform: rotate(3deg) translate(0px, -4px);
+          -ms-transform: rotate(3deg) translate(0px, -4px);
+              transform: rotate(3deg) translate(0px, -4px);
+        }
+        #nprogress .spinner {
+          display: block;
+          position: fixed;
+          z-index: 1031;
+          top: 15px;
+          right: 15px;
+        }
+        #nprogress .spinner-icon {
+          width: 18px;
+          height: 18px;
+          box-sizing: border-box;
+          border: solid 2px transparent;
+          border-top-color: #29d;
+          border-left-color: #29d;
+          border-radius: 50%;
+          -webkit-animation: nprogress-spinner 400ms linear infinite;
+              animation: nprogress-spinner 400ms linear infinite;
+        }
+        @-webkit-keyframes nprogress-spinner {
+          0%   { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes nprogress-spinner {
+          0%   { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+          `,
+        }}
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        id="nprogress-init"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+        if (typeof window !== "undefined") {
+          window.NProgress && window.NProgress.configure({ showSpinner: true });
+          window.addEventListener('DOMContentLoaded', function() {
+            window.NProgress && window.NProgress.start();
+          });
+          window.addEventListener('load', function() {
+            window.NProgress && window.NProgress.done();
+          });
+        }
+          `,
+        }}
+      />
+      <Script
         id="typekit-init"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            (function(d) {
-              var config = {
-                kitId: 'jgp8ypl',
-                scriptTimeout: 3000,
-                async: true
-              },
-              h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-            })(document);
+        (function(d) {
+          var config = {
+            kitId: 'jgp8ypl',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
           `,
         }}
       />
-    <Script
-      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"
-      strategy="afterInteractive"
-    />
-<Script
-  src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
-  strategy="afterInteractive"
-/>
-
-  <Script
-    id="hs-script-loader"
-    src="//js-na2.hs-scripts.com/243126134.js"
-    strategy="afterInteractive"
-    async
-    defer
-  />
-  <Script
-    src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
-    strategy="afterInteractive"
-  />
+      <Script
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="hs-script-loader"
+        src="//js-na2.hs-scripts.com/243126134.js"
+        strategy="afterInteractive"
+        async
+        defer
+      />
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+        strategy="afterInteractive"
+      />
         <title>VketReal有志スタッフおすすめ秋葉原名所マップ</title>
         </Head>
       <body className="antialiased" style={myfont.style}>
