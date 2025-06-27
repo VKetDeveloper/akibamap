@@ -41,6 +41,9 @@ const spots: Spot[] = [
   { id: 18, name: 'GiGO秋葉原3号館', type: 'ゲームセンター', lat: 35.699246, lng: 139.770939, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://tempo.gendagigo.jp/am/akiba-3/', nfsw: false },
   { id: 19, name: 'GiGO秋葉原5号館', type: 'ゲームセンター', lat: 35.698782, lng: 139.770636, description: 'STGとレトロアケゲーの聖地。移植が絶望的な激レアゲームも。', imageUrl: 'images/notimg.png', siteurl: 'https://tempo.gendagigo.jp/am/akiba-5/', nfsw: false },
   { id: 20, name: '秋葉原最終処分場。', type: 'ショッピング', lat: 35.698784, lng: 139.770859, description: '家電のケンちゃん系列のジャンク専門店として、2019年2月9日に東京ラジオデパートの地下1階にオープンした。古き良きアキバのジャンク屋といった雰囲気のお店で、ジャンクのPCパーツからジャンクPC、何に使うか分からない物まで、幅広いジャンルのジャンク品が並んでいる。「酷」「悲」「喜」といった、状態に応じた独特なレーティングも特徴。店頭での中古買取りも随時受け付けている。', imageUrl: 'images/notimg.png', siteurl: 'https://junk.co.jp/', nfsw: false },
+  {id : 21, name: '竹むら', type: '飲食店', lat: 35.698154, lng: 139.771734, description: 'ラブライブ！の聖地らしいです。甘味は絶品。中は撮影できないので注意。', imageUrl: 'images/notimg.png', siteurl: 'https://visit-chiyoda.tokyo/app/spot/detail/360', nfsw: false },
+  { id: 22, name: '津波を刻む建物', type: 'VRChatワールド', lat: 35.6988076312792, lng: 139.771284007653, description: 'もし秋葉原の街を津波が襲ったら、という想定で作られたワールド。現実と見比べつつ、津波の恐ろしさを感じられると思います。', imageUrl: 'images/notimg.png', siteurl: 'https://vrchat.com/home/world/wrld_41155a46-13bc-4b1e-be0f-769c88099b14', nfsw: false },
+  { id: 23, name: '昔秋葉原にあった博物館', type: 'VRChatワールド', lat: 35.6998080760078, lng: 139.766285178267, description: '交通博物館の跡地です。子どもの頃に通った人もいるかも。', imageUrl: 'images/notimg.png', siteurl: 'https://vrchat.com/home/world/wrld_12345678-1234-1234-1234-123456789012', nfsw: false },
 ];
 
 const customIcon = new Icon({ iconUrl: 'pin.png', iconSize: [32, 32] });
